@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="th">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>นโยบายความเป็นส่วนตัว - โรงเรียนคุณธรรม สพฐ.
+โรงเรียนสตรีพัทลุง</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+color: #2d3748;
+            line-height: 1.8;
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+}
+
+        body::before {
+            content: '';
+position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+pointer-events: none;
+            z-index: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+}
+
+        .container {
+            width: 100%;
+min-height: 100%;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+position: relative;
+            display: inline-block;
+        }
+
+        .logo-container::before {
+            content: '';
+position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 160px;
+            height: 160px;
+background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 3s ease-in-out infinite;
+}
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+opacity: 0.5;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+opacity: 0.8;
+            }
+        }
+
+        .logo {
+            width: 140px;
+height: 140px;
+            border-radius: 35px;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.3),
+                0 0 0 10px rgba(255, 255, 255, 0.1),
+                inset 0 0 20px rgba(255, 255, 255, 0.2);
+transition: transform 0.4s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo:hover {
+            transform: translateY(-8px) scale(1.08) rotate(2deg);
+}
+
+        .header h1 {
+            font-size: 56px;
+font-weight: 800;
+            margin: 25px 0 15px;
+            color: white;
+            text-shadow: 
+                0 2px 10px rgba(0, 0, 0, 0.2),
+                0 4px 20px rgba(0, 0, 0, 0.15);
+letter-spacing: -1px;
+        }
+
+        .header p {
+            font-size: 22px;
+color: #ffffff;
+            margin: 0;
+            font-weight: 600;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.2);
+padding: 8px 24px;
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        .content-wrapper {
+            max-width: 1000px;
+margin: 0 auto;
+        }
+
+        .policy-card {
+            background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 45px;
+            margin-bottom: 35px;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(255, 255, 255, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+transition: all 0.4s ease;
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+}
+
+        .policy-card::before {
+            content: '';
+position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            transform: scaleX(0);
+transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .policy-card:hover::before {
+            transform: scaleX(1);
+}
+
+        .policy-card:hover {
+            transform: translateY(-8px) scale(1.01);
+box-shadow: 
+                0 30px 80px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+        .policy-number {
+            display: inline-flex;
+align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            font-size: 28px;
+font-weight: 800;
+            margin-bottom: 25px;
+            box-shadow: 
+                0 10px 30px rgba(102, 126, 234, 0.4),
+                0 0 0 3px rgba(255, 255, 255, 0.3);
+position: relative;
+            animation: numberPop 0.6s ease-out;
+        }
+
+        @keyframes numberPop {
+            0% {
+                transform: scale(0);
+opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+}
+            100% {
+                transform: scale(1);
+opacity: 1;
+            }
+        }
+
+        .policy-card h2 {
+            font-size: 28px;
+color: #2d3748;
+            margin: 0 0 20px;
+            font-weight: 700;
+        }
+
+        .policy-card h3 {
+            font-size: 22px;
+color: #4a5568;
+            margin: 25px 0 15px;
+            font-weight: 600;
+        }
+
+        .policy-card p {
+            font-size: 18px;
+color: #4a5568;
+            margin-bottom: 15px;
+        }
+
+        .policy-card ul {
+            list-style: none;
+padding: 0;
+            margin: 15px 0;
+        }
+
+        .policy-card ul li {
+            position: relative;
+padding-left: 35px;
+            margin-bottom: 12px;
+            font-size: 17px;
+            color: #4a5568;
+        }
+
+        .policy-card ul li:before {
+            content: "✓";
+position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+text-align: center;
+            line-height: 24px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .domain-list {
+            background: #f7fafc;
+border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .domain-list li {
+            font-family: 'Courier New', monospace;
+font-size: 16px;
+        }
+
+        .domain-link {
+            color: #667eea;
+text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+}
+
+        .domain-link:hover {
+            color: #764ba2;
+border-bottom: 2px solid #764ba2;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+color: white;
+            border-radius: 35px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 
+                0 20px 60px rgba(102, 126, 234, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+animation: fadeInUp 0.8s ease-out 0.2s both;
+            position: relative;
+            overflow: hidden;
+}
+
+        .contact-card::before {
+            content: '';
+position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+}
+            to {
+                transform: rotate(360deg);
+}
+        }
+
+        .contact-card h2 {
+            font-size: 36px;
+margin: 0 0 20px;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+        .contact-card p {
+            font-size: 19px;
+margin: 0 0 30px;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            line-height: 1.7;
+}
+
+        .contact-button {
+            display: inline-flex;
+align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: white;
+            color: #667eea;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+font-weight: 700;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.2),
+                0 0 0 2px rgba(255, 255, 255, 0.3);
+transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-3px) scale(1.05);
+box-shadow: 
+                0 15px 40px rgba(0, 0, 0, 0.3),
+                0 0 0 3px rgba(255, 255, 255, 0.4);
+background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+        }
+
+        .contact-button:active {
+            transform: translateY(-1px) scale(1.02);
+}
+
+        .contact-icon {
+            font-size: 22px;
+}
+
+        .footer {
+            background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+            margin-top: 60px;
+            padding: 50px 20px 30px;
+            border-radius: 35px 35px 0 0;
+box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+}
+
+        .footer-content {
+            max-width: 1000px;
+margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 30px;
+border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .footer-logo-section {
+            display: flex;
+align-items: center;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            width: 80px;
+height: 80px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+        .footer-title {
+            font-size: 20px;
+font-weight: 700;
+            color: #2d3748;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .footer-social h4 {
+            font-size: 18px;
+font-weight: 600;
+            color: #4a5568;
+            margin: 0 0 15px;
+            text-align: center;
+}
+
+        .social-links {
+            display: flex;
+gap: 15px;
+            justify-content: center;
+        }
+
+        .social-link {
+            display: flex;
+align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px) scale(1.1);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-link.facebook {
+            background: linear-gradient(135deg, #1877f2 0%, #0d5bb8 100%);
+}
+
+        .social-link.instagram {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+        .social-link.tiktok {
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+}
+
+        .social-link.email {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+        .footer-bottom {
+            max-width: 1000px;
+margin: 0 auto;
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+color: #718096;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+border-left: 4px solid #667eea;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+}
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+}
+
+            .policy-card {
+                padding: 25px;
+}
+
+            .policy-card h2 {
+                font-size: 24px;
+}
+
+            .contact-card {
+                padding: 30px 20px;
+}
+
+            .footer-content {
+                flex-direction: column;
+text-align: center;
+            }
+
+            .footer-logo-section {
+                flex-direction: column;
+text-align: center;
+            }
+
+            .footer-title {
+                font-size: 18px;
+}
+
+            .social-links {
+                flex-wrap: wrap;
+}
+        }
+    </style>
+  <style>@view-transition { navigation: auto;
+}</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <div class="logo-container"><img src="https://img5.pic.in.th/file/secure-sv1/IMG_25650953161d1c1bbdd8.jpeg" alt="โลโก้โรงเรียนคุณธรรม สพฐ. โรงเรียนสตรีพัทลุง" class="logo">
+    </div>
+    <h1 id="pageTitle">นโยบายความเป็นส่วนตัว</h1>
+    <p id="subtitle">Privacy Policy</p>
+   </div>
+   <div class="content-wrapper" id="contentWrapper">
+    
+    <div class="policy-card">
+     <div class="policy-number">
+      1
+     </div>
+     <h2>ขอบเขตของนโยบาย</h2>
+     <p>นโยบายนี้ใช้บังคับกับข้อมูลทั้งหมดที่เก็บรวบรวมผ่านเว็บไซต์ดังต่อไปนี้:</p>
+     <div class="domain-list">
+      <ul>
+       <li>หน้าหลัก: <a href="https://spt-moral-school.github.io" target="_blank" rel="noopener noreferrer" class="domain-link">https://spt-moral-school.github.io</a></li>
+       <li><a href="https://spt-moral-school.github.io/registers" target="_blank" rel="noopener noreferrer" class="domain-link">https://spt-moral-school.github.io/registers</a></li>
+       <li><a href="https://spt-moral-school.github.io/registers-smlc" target="_blank" rel="noopener noreferrer" class="domain-link">https://spt-moral-school.github.io/registers-smlc</a></li>
+       <li><a href="https://spt-moral-school.github.io/recruit" target="_blank" rel="noopener noreferrer" class="domain-link">https://spt-moral-school.github.io/recruit</a></li>
+       <li><a href="https://spt-moral-school.github.io/link" target="_blank" rel="noopener noreferrer" class="domain-link">https://spt-moral-school.github.io/link</a></li>
+       <li><a href="https://spt-moral-school.github.io/smlc" target="_blank" rel="noopener noreferrer" class="domain-link">https://spt-moral-school.github.io/smlc</a></li>
+      </ul>
+     </div>
+    </div>
+    
+    <div class="policy-card">
+     <div class="policy-number">
+      2
+     </div>
+     <h2>ข้อมูลส่วนบุคคลที่เราเก็บรวบรวม</h2>
+     <p>เราเก็บรวบรวมข้อมูลส่วนบุคคลจากผู้ใช้งานโดยตรงผ่านแบบฟอร์มลงทะเบียน/สมัคร หรือการติดต่อสอบถาม ข้อมูลดังกล่าวอาจรวมถึง:</p>
+     <ul>
+      <li>**ข้อมูลระบุตัวตน:** ชื่อ-นามสกุล, วันเดือนปีเกิด, เลขประจำตัวประชาชน/เลขประจำตัวนักเรียน</li>
+      <li>**ข้อมูลติดต่อ:** ที่อยู่, เบอร์โทรศัพท์, ที่อยู่อีเมล</li>
+      <li>**ข้อมูลการศึกษา/สังกัด:** ชื่อโรงเรียน, ชั้นเรียน, ตำแหน่ง</li>
+      <li>**ข้อมูลทางเทคนิค/การใช้งาน:** IP Address, ข้อมูลเบราว์เซอร์, เวลาและวันที่ของการเข้าชม (อาจมีการเก็บรวบรวมโดยระบบ GitHub Pages เพื่อวิเคราะห์การเข้าชม)</li>
+     </ul>
+    </div>
+    
+    <div class="policy-card">
+     <div class="policy-number">
+      3
+     </div>
+     <h2>วัตถุประสงค์ในการเก็บรวบรวมข้อมูล</h2>
+     <p>เราเก็บรวบรวมและใช้ข้อมูลส่วนบุคคลของคุณเพื่อวัตถุประสงค์ดังต่อไปนี้:</p>
+     <ul>
+      <li>**เพื่อการดำเนินการตามคำขอของผู้ใช้:** เช่น การลงทะเบียนเข้าร่วมกิจกรรมหรือโครงการต่างๆ ของโรงเรียนคุณธรรม (หน้า <code>/registers</code>, <code>/registers-smlc</code>, <code>/recruit</code>)</li>
+      <li>**เพื่อการติดต่อสื่อสาร:** ตอบคำถาม ให้ข้อมูล หรือแจ้งรายละเอียดเกี่ยวกับกิจกรรมที่คุณได้ลงทะเบียนไว้</li>
+      <li>**เพื่อการบริหารจัดการและการพัฒนา:** วิเคราะห์สถิติการใช้งานเว็บไซต์เพื่อปรับปรุงเนื้อหาและบริการให้มีประสิทธิภาพยิ่งขึ้น</li>
+      <li>**เพื่อการปฏิบัติหน้าที่ตามกฎหมาย:** ดำเนินการตามกฎหมายและระเบียบที่เกี่ยวข้อง โดยเฉพาะอย่างยิ่ง **พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (PDPA)**</li>
+     </ul>
+    </div>
+    
+    <div class="policy-card">
+     <div class="policy-number">
+      4
+     </div>
+     <h2>การเปิดเผยข้อมูลส่วนบุคคล</h2>
+     <p>โรงเรียนสตรีพัทลุงจะไม่เปิดเผยข้อมูลส่วนบุคคลของคุณต่อบุคคลที่สาม เว้นแต่ในกรณีดังต่อไปนี้:</p>
+     <ul>
+      <li>**ได้รับความยินยอม:** คุณได้ให้ความยินยอมโดยชัดแจ้งในการเปิดเผยข้อมูล</li>
+      <li>**เพื่อการปฏิบัติงาน:** เปิดเผยให้แก่บุคลากรภายในโรงเรียนที่เกี่ยวข้องกับกิจกรรมนั้น ๆ หรือผู้ให้บริการภายนอกที่เราว่าจ้างเพื่อดำเนินการตามวัตถุประสงค์ ภายใต้ข้อตกลงรักษาความลับ</li>
+      <li>**ตามที่กฎหมายกำหนด:** เปิดเผยตามคำสั่งศาล หรือตามที่หน่วยงานของรัฐที่มีอำนาจตามกฎหมายร้องขอ</li>
+     </ul>
+    </div>
+    
+    <div class="policy-card">
+     <div class="policy-number">
+      5
+     </div>
+     <h2>มาตรการรักษาความปลอดภัยของข้อมูล</h2>
+     <p>เราใช้มาตรการทางเทคนิคและการจัดการที่เหมาะสมเพื่อปกป้องข้อมูลส่วนบุคคลของคุณจากการเข้าถึง การเปิดเผย การทำลาย หรือการแก้ไขโดยไม่ได้รับอนุญาต</p>
+     <p>เนื่องจากเว็บไซต์ตั้งอยู่บน **GitHub Pages** ซึ่งมีการเข้ารหัสการสื่อสารด้วย **HTTPS** ข้อมูลที่ส่งผ่านจึงมีความปลอดภัยในระดับหนึ่ง</p>
+    </div>
+    
+    <div class="policy-card">
+     <div class="policy-number">
+      6
+     </div>
+     <h2>สิทธิของเจ้าของข้อมูลส่วนบุคคล</h2>
+     <p>คุณมีสิทธิตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลดังต่อไปนี้:</p>
+     <ul>
+      <li>**สิทธิในการเข้าถึง:** ขอสำเนาและตรวจสอบว่าเราได้เก็บรวบรวมข้อมูลส่วนบุคคลใดของคุณ</li>
+      <li>**สิทธิในการแก้ไข:** ขอให้แก้ไขข้อมูลส่วนบุคคลที่ไม่ถูกต้องหรือไม่สมบูรณ์</li>
+      <li>**สิทธิในการลบ:** ขอให้ลบหรือทำลายข้อมูลส่วนบุคคลของคุณ (ภายใต้เงื่อนไขที่กฎหมายกำหนด)</li>
+      <li>**สิทธิในการเพิกถอนความยินยอม:** เพิกถอนความยินยอมในการประมวลผลข้อมูลส่วนบุคคลที่คุณเคยให้ไว้เมื่อใดก็ได้</li>
+     </ul>
+    </div>
+    
+    <div class="policy-card">
+     <div class="policy-number">
+      7
+     </div>
+     <h2>การเปลี่ยนแปลงนโยบาย</h2>
+     <p>โรงเรียนสตรีพัทลุงขอสงวนสิทธิ์ในการ **เปลี่ยนแปลงหรือปรับปรุงนโยบายความเป็นส่วนตัว** นี้ได้ตลอดเวลา การเปลี่ยนแปลงใด ๆ จะมีผลบังคับใช้ทันทีหลังจากโพสต์บนเว็บไซต์นี้</p>
+    </div>
+    
+    <div class="contact-card">
+     <h2 id="contactTitle">📞 ข้อมูลติดต่อ</h2>
+     <p id="contactDescription">หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อผู้ดูแลระบบของโรงเรียนสตรีพัทลุงผ่านช่องทางที่ระบุบนเว็บไซต์หลัก</p>
+     <a href="https://spt-moral-school.github.io/#contact" target="_blank" rel="noopener noreferrer" class="contact-button">
+        <span class="contact-icon">✉️</span>
+        <span>ติดต่อเรา</span>
+     </a>
+    </div>
+    </div>
+   <footer class="footer">
+    <div class="footer-content">
+     <div class="footer-logo-section"><img src="https://img5.pic.in.th/file/secure-sv1/IMG_25650953161d1c1bbdd8.jpeg" alt="โลโก้โรงเรียนสตรีพัทลุง" class="footer-logo">
+      <div>
+      
+ <h3 class="footer-title">โรงเรียนคุณธรรม สพฐ.<br>
+        โรงเรียนสตรีพัทลุง</h3>
+      </div>
+     </div>
+     <div class="footer-social">
+      <h4>ติดตามเรา</h4>
+      <div class="social-links"><a href="https://www.facebook.com/sptmoralschool" target="_blank" rel="noopener noreferrer" class="social-link facebook" title="Facebook">
+        <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg></a> <a href="https://www.instagram.com/spt_moral_school/" target="_blank" rel="noopener 
+noreferrer" class="social-link instagram" title="Instagram">
+        <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" 
+/>
+        </svg></a> <a href="https://www.tiktok.com/@spt.moral.school" target="_blank" rel="noopener noreferrer" class="social-link tiktok" title="TikTok">
+        <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+        </svg></a> <a href="mailto:sptmorral@spt.ac.th" class="social-link email" title="Email">
+       
+ <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg></a>
+      </div>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <p>© 2024 SPT MORAL SCHOOL - โรงเรียนคุณธรรม สพฐ.
+โรงเรียนสตรีพัทลุง | All Rights Reserved</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+        const defaultConfig = {
+            // เปลี่ยนชื่อเรื่องใน defaultConfig
+            page_title: "นโยบายความเป็นส่วนตัว",
+            subtitle: "Privacy Policy",
+            contact_title: "📞 ข้อมูลติดต่อ",
+            contact_description: "หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อผู้ดูแลระบบของโรงเรียนคุณธรรม สพฐ. โรงเรียนสตรีพัทลุงผ่านช่องทางที่ระบุบนเว็บไซต์หลัก",
+            primary_color: "#667eea",
+    
+        secondary_color: "#764ba2",
+            background_color: "#f5f7fa",
+            text_color: "#2d3748",
+            card_background: "#ffffff",
+            font_family: "Sarabun",
+            font_size: 18
+        };
+function ensureContactButton() {
+            const contactCard = document.querySelector('.contact-card');
+if (contactCard && !contactCard.querySelector('.contact-button')) {
+                const button = document.createElement('a');
+button.href = 'https://spt-moral-school.github.io/#contact';
+                button.target = '_blank';
+                button.rel = 'noopener noreferrer';
+                button.className = 'contact-button';
+button.innerHTML = `
+                    <span class="contact-icon">✉️</span>
+                    <span>ติดต่อเรา</span>
+                `;
+contactCard.appendChild(button);
+            }
+        }
+
+        async function onConfigChange(config) {
+            const pageTitle = config.page_title ||
+defaultConfig.page_title;
+            const subtitle = config.subtitle || defaultConfig.subtitle;
+            const contactTitle = config.contact_title || defaultConfig.contact_title;
+            const contactDescription = config.contact_description || defaultConfig.contact_description;
+const primaryColor = config.primary_color || defaultConfig.primary_color;
+            const secondaryColor = config.secondary_color || defaultConfig.secondary_color;
+            const backgroundColor = config.background_color || defaultConfig.background_color;
+const textColor = config.text_color || defaultConfig.text_color;
+            const cardBackground = config.card_background || defaultConfig.card_background;
+            const customFont = config.font_family || defaultConfig.font_family;
+const baseSize = config.font_size || defaultConfig.font_size;
+
+            ensureContactButton();
+
+            document.getElementById('pageTitle').textContent = pageTitle;
+            document.getElementById('subtitle').textContent = subtitle;
+            
+            const contactTitleEl = document.getElementById('contactTitle');
+const contactDescEl = document.getElementById('contactDescription');
+            if (contactTitleEl) contactTitleEl.textContent = contactTitle;
+            if (contactDescEl) contactDescEl.textContent = contactDescription;
+document.body.style.background = `linear-gradient(135deg, ${backgroundColor} 0%, ${backgroundColor} 100%)`;
+            document.body.style.color = textColor;
+            document.body.style.fontFamily = `${customFont}, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`;
+document.body.style.fontSize = `${baseSize}px`;
+
+            const headerH1 = document.querySelector('.header h1');
+            headerH1.style.background = `linear-gradient(135deg, ${primaryColor} 0%, ${secondaryColor} 100%)`;
+            headerH1.style.webkitBackgroundClip = 'text';
+headerH1.style.webkitTextFillColor = 'transparent';
+            headerH1.style.backgroundClip = 'text';
+            headerH1.style.fontSize = `${baseSize * 2.67}px`;
+
+            const headerSubtitle = document.querySelector('.header p');
+headerSubtitle.style.fontSize = `${baseSize * 1.11}px`;
+            headerSubtitle.style.color = '#ffffff';
+
+            const policyCards = document.querySelectorAll('.policy-card');
+policyCards.forEach(card => {
+                card.style.background = cardBackground;
+            });
+const policyNumbers = document.querySelectorAll('.policy-number');
+            policyNumbers.forEach(number => {
+                number.style.background = `linear-gradient(135deg, ${primaryColor} 0%, ${secondaryColor} 100%)`;
+                number.style.fontSize = `${baseSize * 1.33}px`;
+            });
+const h2Elements = document.querySelectorAll('.policy-card h2');
+            h2Elements.forEach(h2 => {
+                h2.style.color = textColor;
+                h2.style.fontSize = `${baseSize * 1.56}px`;
+            });
+const h3Elements = document.querySelectorAll('.policy-card h3');
+            h3Elements.forEach(h3 => {
+                h3.style.fontSize = `${baseSize * 1.22}px`;
+            });
+const pElements = document.querySelectorAll('.policy-card p');
+            pElements.forEach(p => {
+                p.style.fontSize = `${baseSize}px`;
+            });
+const liElements = document.querySelectorAll('.policy-card ul li');
+            liElements.forEach(li => {
+                li.style.fontSize = `${baseSize * 0.94}px`;
+            });
+const contactCard = document.querySelector('.contact-card');
+            if (contactCard) {
+                contactCard.style.background = `linear-gradient(135deg, ${primaryColor} 0%, ${secondaryColor} 50%, #f093fb 100%)`;
+}
+
+            const contactH2 = document.querySelector('.contact-card h2');
+if (contactH2) {
+                contactH2.style.fontSize = `${baseSize * 2}px`;
+}
+
+            const contactP = document.querySelector('.contact-card p');
+if (contactP) {
+                contactP.style.fontSize = `${baseSize * 1.06}px`;
+}
+
+            const contactButton = document.querySelector('.contact-button');
+if (contactButton) {
+                contactButton.style.fontSize = `${baseSize}px`;
+contactButton.style.color = primaryColor;
+            }
+
+            const highlightBoxes = document.querySelectorAll('.highlight-box');
+highlightBoxes.forEach(box => {
+                box.style.borderLeftColor = primaryColor;
+            });
+}
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities: (config) => ({
+                    recolorables: [
+      
+                  {
+                            get: () => config.background_color || defaultConfig.background_color,
+                            set: (value) => {
+                  
+              config.background_color = value;
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                     
+   },
+                        {
+                            get: () => config.card_background || defaultConfig.card_background,
+                            set: (value) => {
+         
+                       config.card_background = value;
+                                window.elementSdk.setConfig({ card_background: value });
+                            }
+            
+            },
+                        {
+                            get: () => config.text_color ||
+defaultConfig.text_color,
+                            set: (value) => {
+                                config.text_color = value;
+window.elementSdk.setConfig({ text_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.primary_color ||
+defaultConfig.primary_color,
+                            set: (value) => {
+                                config.primary_color = value;
+window.elementSdk.setConfig({ primary_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.secondary_color ||
+defaultConfig.secondary_color,
+                            set: (value) => {
+                                config.secondary_color = value;
+window.elementSdk.setConfig({ secondary_color: value });
+                            }
+                        }
+                    ],
+                    borderables: [],
+                    fontEditable: {
+          
+              get: () => config.font_family ||
+defaultConfig.font_family,
+                        set: (value) => {
+                            config.font_family = value;
+window.elementSdk.setConfig({ font_family: value });
+                        }
+                    },
+                    fontSizeable: {
+                        get: () => config.font_size ||
+defaultConfig.font_size,
+                        set: (value) => {
+                            config.font_size = value;
+window.elementSdk.setConfig({ font_size: value });
+                        }
+                    }
+                }),
+                mapToEditPanelValues: (config) => new Map([
+                    ["page_title", config.page_title || defaultConfig.page_title],
+                 
+   ["subtitle", config.subtitle || defaultConfig.subtitle],
+                    ["contact_title", config.contact_title || defaultConfig.contact_title],
+                    ["contact_description", config.contact_description || defaultConfig.contact_description]
+                ])
+            });
+}
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a52bd5252dc0c87',t:'MTc2NDI1ODE4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
